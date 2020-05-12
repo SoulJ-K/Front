@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.area{border : 1px solid black; min-hieght: 100px;}
+</style>
+</head>
+<body>
+
+</body>
+</html>

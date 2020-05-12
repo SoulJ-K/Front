@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>orderform</title>
+</head>
+<body>
+	
+	<label>고객명: </label>	
+	<input type="text";><br>
+	<br>
+	
+	<label>전화번호 : </label>
+	<input type="text";><br>
+	<br>
+	<label>E-mail : </label>
+	<input type="text";><br>
+	<br>
+	
+	<form>
+	<fieldset>
+		<legend>&nbsp;피자 사이즈&nbsp;</legend>
+		<br>
+		<input type="radio" name="size" value="s">
+		<label> Small</label>
+		<br><br>
+		
+		<input type="radio" name="size" value="m">
+		<label>Medium</label>
+		<br><br>
+		
+		<input type="radio" name="size" value="l">
+		<label>Large</label>
+		<br><br>
+	</fieldset>
+	</form>
+	<form>
+	<fieldset>
+		<legend>&nbsp;토핑선택&nbsp;</legend>
+		<br>
+		<input type="checkbox" name="top" value="bacon">
+		<label>베이컨</label>
+		<br><br>
+		
+		<input type="checkbox" name="top" value="cheese">
+		<label>치즈</label>
+		<br><br>
+		
+		<input type="checkbox" name="top" value="onion">
+		<label>양파</label>
+		<br><br>
+		
+		<input type="checkbox" name="top" value="mushroom">
+		<label>버섯</label>
+		<br><br>
+	</fieldset>
+	</form>
+	<br>
+	
+	<label>희망 배송시간:</label>
+	<input type="time" name="time">
+	<br><br>
+	
+	<form>
+		<label>배송시 요청사항:</label>
+		<textarea></textarea> 
+	</form>
+	<br>
+	<input type="submit" value="주문하기">
+</body>
+</html>

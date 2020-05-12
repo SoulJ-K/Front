@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.area{border: 1px solid red; height: 200px;}
+</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>취미</legend>
+			<table>
+				<tr>
+					<td><input type="checkbox" name="hobby" value="전체선택" id="all" onclick="selectAll();">전체선택</td>
+					<td><input type="checkbox" name="hobby" value="종합" id="b">종합</td>
+					<td><input type="checkbox" name="hobby" value="소설" id="n">소설</td>
+					<td><input type="checkbox" name="hobby" value="시/에세이" id="p">시/에세이</td>
+					<td><input type="checkbox" name="hobby" value="경제/경영" id="e">경제/경영</td>
+					<td><input type="checkbox" name="hobby" value="자기계발" id="ja">자기계발</td>
+					<td><input type="checkbox" name="hobby" value="아동" id="c">아동</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" name="hobby" value="all" id="all">여행</td>
+					<td><input type="checkbox" name="hobby" value="b" id="b">과학</td>
+					<td><input type="checkbox" name="hobby" value="n" id="n">역사/문화</td>
+					<td><input type="checkbox" name="hobby" value="p" id="p">외국어</td>
+					<td><input type="checkbox" name="hobby" value="e" id="e">컴퓨터</td>
+					<td><input type="checkbox" name="hobby" value="ja" id="ja">만화</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	<br>
+	<button onclick="accessName();">카테고리 선택</button>
+	<div id="area2" class="area"></div>
+	
+	<script>
+		function accessName(){
+			var hobby = document.getElementsByName('hobby');
+			
+			var checkItem = "";
+			
+			for(var i = 0; i < hobby.length; i++){
+				if(hobby[i].checked == true){
+					checkItem += hobby[i].value + "선택함<br>"
+				}
+			}
+			
+			document.getElementById('area2').innerHTML = checkItem;
+		}
+	</script>
+</body>
+</html>
+
+	

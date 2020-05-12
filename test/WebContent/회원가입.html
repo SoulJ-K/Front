@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+<form id="enrollform" method="post" action="memberenroll">
+	<ul>
+		<li>이메일<input type="email" id="useremail"></li>
+		<li id="userpwd">비밀번호<input type="text"></li>
+		<li id="pwdchk">비밀번호 확인<input type="text"></li>
+		<li id="username">이름<input type="text"></li>
+		<li>전화번호
+			
+			<select>
+				<option value='' selected>010</option>
+				<option value='011'>011</option>
+				<option value='016'>016</option>
+				<option value='019'>019</option>
+			</select>
+			-<input type="text">
+			-<input type="text">
+		</li>
+		<li>특기
+			<datalist>
+				<option value="java">java</option>
+				<option value="oracle">oracle</option>
+				<option value="html/css">html/css</option>
+				<option value="javascript/jquery">javascript/jquery</option>
+			</datalist>
+		</li>
+		<li>자기소개<input id="insertIntroduce" type="button" value="자기소개 등록"></li>
+		<li>
+			
+			<input type="button" value="회원가입" id="plus" >
+			
+			<input type="button" value="취소">
+			
+		</li>
+	</ul>
+	
+	<script>
+	var useremail = document.getElementById("useremail");
+	var userpwd = document.getElementById("userpwd");
+	var pwdchk = document.getElementById("pwdchk");
+	var username = document.getElementById("username");
+	
+	var userpwd = RegExp(/[a-zA-Z0-9]{7,11}/g;);
+	if(userpwd.test($('#userpwd').val())){}
+		alert("암호는 영문자와 숫자로 8글자 이상 12글자 이하로 입력하세요");
+	}
+	
+	var useremail = RegExp(/^[A-Za-z0-9]+@[A-Za-z0-9]+.[A-Za-z0-9]/);
+	
+	var username = RegExp(/[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]{2,}/);
+	
+	if(pwdchk.value != userpwd.value){
+		alert("암호가 일치하지 않습니다.");
+	}
+	
+	$('#insertIntroduce').click(function(){
+		textarea
+	});
+	
+	$('#deleteIntroduce').click(function(){
+		hidden('#deleteIntroduce');
+	});
+	
+	$('#introduce'). (function(){
+		$(this).css('hidden');
+	});
+	</script>
+</form>
+</body>
+</html>

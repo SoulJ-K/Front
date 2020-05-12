@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#out{border: 2px solid black;
+		width: 450px; height: 400px;}
+	
+	#i{width: 250px; height: 150px;
+		margin-left: 10px;
+		margin-top: 10px;}
+	
+	#p{border: 1px solid #D8D8D8;
+		width: 300px; height: 230px;
+		transform: rotate(10deg);
+		margin-top: 60px;
+		margin-left: 80px;}
+	
+	#summer{text-align: center; color: green;
+			font-family: "바탕체";}

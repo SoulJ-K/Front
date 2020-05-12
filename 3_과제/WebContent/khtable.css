@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+	caption{color: red; font-weight: bold; font-size: 30px;}
+	
+	#th1{background: red; color: white;}
+	#th2{background: red; color: white;}
+	#th3{background: red; color: white;}
+	#th4{background: red; color: white;}
+	
+	tbody{background: orange;}
+	#tb1{text-align: center;}
+	#tb2{text-align: center;}
+	#tb3{text-align: center;}
+	
+	input[type="submit"]{background: green; color: white;}
+	
+	tfoot{background: yellow; color: red; font-weight: bold; text-align: center;}
