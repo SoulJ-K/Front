@@ -231,7 +231,7 @@
 		
 		<h4>동적으로 글자 수 세기</h4>
 		<span id="counter">0</span>/150<br>
-		<textarea cols=70 rows=5 id="textTest"></textarea>
+		<textarea cols=70 rows=5 id="textTest" maxlength="150"></textarea>
 		<script>
 			$(function(){
 				//textarea에 입력된 글자수가 카운트 되면서 150글자가 넘어가면 빨간색으로 숫자가 바뀌게 하기
@@ -239,39 +239,16 @@
 					var counter = $(this).val();
 									
 				$('#counter').html(counter.length);	
-				});
 				
-				if(counter.length > 150){
+				if(counter.length >= 150){
 					$('#counter').css('color', 'red');
 				}
+				});
+				
 				$('#counter').keyup();
 			});
 			
 		</script>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 </body>
 </html>
